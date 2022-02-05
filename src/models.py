@@ -44,7 +44,6 @@ class Favorites(Base):
     __tablename__ = 'favorites'
     id = Column(Integer, primary_key=True)
     created_at = Column(DateTime)
-    updated_at = Column(DateTime)
     user_id = Column(Integer, ForeignKey('user.id'))
     characters_id = Column(Integer, ForeignKey('characters.id'))
     planets_id = Column(Integer, ForeignKey('planets.id'))
